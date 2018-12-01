@@ -22,16 +22,14 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: "Matthew Bunday's personal website" },
+            { name: 'keywords', content: 'Matthew Bunday, taijutsu, programming, meditation' },
           ]}
         >
           <html lang="en" />
         </Helmet>
         <div id="logo"><a href="/"><img src={logo} alt="Logo" class="logo"/></a></div>
-        <article>
-          {children}
-        </article>
+        {children}
       </>
     )}
   />
