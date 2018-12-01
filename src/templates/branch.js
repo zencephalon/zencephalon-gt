@@ -2,12 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import Helmet from 'react-helmet'
 import Layout from "../components/layout"
+import Header from "../components/header"
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <Helmet
+      <Header
         title={`${data.site.siteMetadata.title}: ${post.fields.slug.replace(/\W/g, ' ')}`} />
       <article dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>

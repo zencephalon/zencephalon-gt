@@ -19,16 +19,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: "Matthew Bunday's personal website" },
-            { name: 'keywords', content: 'Matthew Bunday, taijutsu, programming, meditation' },
-            { name: 'google-site-verification', content: '4NtVfKdG2gUQGMyubvmtuKAOLNs0g_Xu6hujNRTjGzg' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
         <div id="logo"><a href="/"><img src={logo} alt="Logo" class="logo"/></a></div>
         {children}
       </>
