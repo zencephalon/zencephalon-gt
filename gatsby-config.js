@@ -24,12 +24,14 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-        {
-          resolve: "gatsby-remark-external-links",
-          options: {
-            target: "_blank",
-          }
-        }
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+            }
+          },
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-smartypants`,
         ]
       }
     },
