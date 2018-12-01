@@ -8,7 +8,6 @@ const Header = ({ title }) => (
     meta={[
       { name: 'description', content: "Matthew Bunday's personal website" },
       { name: 'keywords', content: 'Matthew Bunday, taijutsu, programming, meditation' },
-      { name: 'google-site-verification', content: '4NtVfKdG2gUQGMyubvmtuKAOLNs0g_Xu6hujNRTjGzg' },
     ]}
   >
     <html lang="en" />
