@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Zencephalon',
+    siteUrl: `https://zencephalon.com`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -44,5 +45,14 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://zencephalon.com',
+        sitemap: 'https://zencephalon.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
   ],
 }
