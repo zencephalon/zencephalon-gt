@@ -1,10 +1,18 @@
+/* Older browsers */
+html { font-size: 16px; }
+
+/* Modern browsers only need this one */
+
+@media screen and (min-width: 25em){
+  html { font-size: calc( 24px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+}
+
 body {
   background-color: #fff;
   color: #35342f;
   display: flex;
   justify-content: center;
   font-family: 'Vollkorn', serif;
-  font-size: 2vw;
   margin: 0.5em 1.5em;
 }
 
@@ -25,7 +33,7 @@ img.logo {
 }
 
 article {
-  width: 37em;
+  max-width: 37em;
   margin-left: 0.5em;
 }
 
