@@ -20,19 +20,6 @@ const Layout = ({ children }) => (
       <>
         <div id="logo"><a href="/"><img src={logo} alt="Logo" class="logo"/></a></div>
         {children}
-        <script type="text/javascript">
-          WebFontConfig = {
-            google: { families: [ 'Vollkorn' ] }
-          };
-          (function() {
-            var wf = document.createElement('script');
-            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-            wf.type = 'text/javascript';
-            wf.async = 'true';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(wf, s);
-          })(); 
-        </script>
       </>
     )}
   />
