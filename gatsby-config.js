@@ -49,11 +49,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          `vollkorn`,
-        ]
+        google: {
+          families: ['Vollkorn']
+        }
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
