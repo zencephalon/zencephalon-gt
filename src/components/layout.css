@@ -1,10 +1,14 @@
 /* Older browsers */
-html { font-size: 16px; }
+html {
+  font-size: 16px;
+}
 
 /* Modern browsers only need this one */
 
-@media screen and (min-width: 25em){
-  html { font-size: calc( 20px + (24 - 20) * (100vw - 400px) / (800 - 400) ); }
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(20px + (24 - 20) * (100vw - 400px) / (800 - 400));
+  }
 }
 
 body {
@@ -21,29 +25,31 @@ ul {
 }
 
 a {
-  color: #36AECC;
+  color: #36aecc;
 }
 
 a:visited {
   color: #ccc;
 }
 
-#logo {
-  margin-left: 0.5em;
-}
-
 img.logo {
   height: 2em;
 }
 
-article {
+article,
+footer,
+header {
   max-width: 37em;
   margin-left: 0.5em;
 }
 
+footer {
+  font-size: 60%;
+}
+
 article h1 {
   font-weight: normal;
-  color: #36AECC;
+  color: #36aecc;
 }
 
 article h2 {
@@ -62,7 +68,7 @@ article.faded a:visited {
 }
 
 article:not(.faded) a {
-  color: #36AECC;
+  color: #36aecc;
 }
 article:not(.faded) a:visited {
   color: #aaa;
