@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 import logo from '../images/zenchinese.png'
 import './layout.css'
@@ -18,8 +18,17 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div id="logo"><a href="/"><img src={logo} alt="Logo" class="logo"/></a></div>
+        <header>
+          <div id="logo">
+            <Link to="/">
+              <img src={logo} alt="Logo" class="logo" />
+            </Link>
+          </div>
+        </header>
         {children}
+        <footer>
+          © Matthew Bunday 2010-2019. <Link to="/iluvu">ILUVU</Link>.
+        </footer>
       </>
     )}
   />
