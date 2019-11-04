@@ -27,7 +27,10 @@ const Layout = ({ children }) => (
         </header>
         {children}
         <footer>
-          © Matthew Bunday 2010-2019. <Link to="/iluvu">ILUVU</Link>.
+          <hr />
+          <p>
+            © Matthew Bunday 2010-2019. <Link to="/iluvu">ILUVU</Link>.
+          </p>
         </footer>
       </>
     )}
