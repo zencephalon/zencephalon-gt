@@ -25,7 +25,8 @@
     "lodash": "^4.17.15",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "typeface-vollkorn": "^0.0.72"
   },
   "keywords": [
     "gatsby"
